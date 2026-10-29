@@ -3,15 +3,15 @@
 
 ---
 
-## Table of Contents
+# Table of Contents
 
-### Notebooks
+## Notebooks
 1. [**Dataset Audit**](./notebooks/dataset_audit.ipynb)
 2. [**Preprocessing and Baseline**](./notebooks/preprocessing.ipynb)
 
-### [Data Source](./data/README.md)
+## [Data Source](./data/README.md)
 
-## AI usage declaration
+# AI usage declaration
 Generative AI models such as **Google Gemini** and **Github Copilot** were used while creating this portfolio for the following reasons:
 
 - Explaining Machine learning concepts
@@ -22,30 +22,37 @@ Any code written by AI tools was studied and rewritten by myself to ensure that 
 
 No markdown or notes were written using AI tools.
 
-## Get Started
+# Get Started
 
-### 1. Start a virtual environment
+## 1. Start a virtual environment
 
 Open a terminal in the root directory and run the following
 
 ```powershell
 python -m venv FMC_ML_Portfolio
 ```
-or
+### or
 ```powershell
 uv venv
 ```
 
-### 2. Install dependancies
+## 2. Install dependancies
 
 ```powershell
 pip install -r requirements.txt
 ```
-or
+### or
 ```powershell
 uv pip install -r requirements.txt
 ```
 
-### 3. Open the first notebook
+## 3. [**Open the first Notebook**](./notebooks/dataset_audit.ipynb)
+Use **jupyter notebook** however you find convenient.
 
-[**Open Dataset Audit**](./notebooks/dataset_audit.ipynb). It is recommended to run all cells before reading
+### Terminal
+```powershell
+jupyter notebook
+```
+or through **VS Code**, or any other method.
+
+It is recommended to run all cells before reading.

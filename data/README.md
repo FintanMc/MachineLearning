@@ -1,5 +1,5 @@
 # Data
-[Teen_Mental_Health_Dataset](./Teen_Mental_Health_Dataset.csv)
+[Teen_Mental_Health_Dataset.csv](./Teen_Mental_Health_Dataset.csv)
 
 ## Source
 [Social_Media_Impact_on_Mental Health](https://www.kaggle.com/datasets/sunil123kumar/social-media-impact-on-mental-health) by Sunil Kumar on https://www.kaggle.com/
@@ -10,7 +10,7 @@
 
 The findings of this project are not a substitute for a medical diagnosis of any medical conditions with
 symptoms of anxiety, stress or depression; they are predications based on a finite dataset. Dataset
-published on Kaggle (Terms, Privacy) by user “Sunil Kumar”.
+published on Kaggle ([Terms](https://www.kaggle.com/terms), [Privacy](https://www.kaggle.com/privacy)) by user “Sunil Kumar”.
 
 ## Columns
 
