@@ -1,8 +1,9 @@
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder
 
-preprocessor = ColumnTransformer(
-    transformers=[
+def preprocessor(remainder="passthrough"):
+
+    transformers = [
         (
             "onehot_encoder",
             OneHotEncoder(sparse_output=False, handle_unknown="ignore"),
@@ -12,7 +13,19 @@ preprocessor = ColumnTransformer(
             "ordinal_encoder",
             OrdinalEncoder(),
             ['social_interaction_level'],
+        ),
+    ]
+
+    if remainder == "drop":
+        transformers.append(
+            (
+                "keep",
+                "passthrough",
+                ["daily_social_media_hours", "stress_level", "anxiety_level", "sleep_hours"]
+            )
         )
-    ],
-    remainder="passthrough"
-)
+
+    return ColumnTransformer(
+        transformers=transformers,
+        remainder=remainder
+    )

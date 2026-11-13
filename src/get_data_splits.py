@@ -11,8 +11,3 @@ def get_data_splits():
     y = data[target]
 
     return train_test_split(X, y, test_size=environment.Test_Size, stratify=y, random_state=environment.Random_State)
-
-if __name__ == "__main__":
-    from dotenv import load_dotenv
-    load_dotenv()
-    print(get_data_splits())
